@@ -1,0 +1,107 @@
+/* * {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+} */
+
+html {
+    background-color: burlywood;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    left: 50%;
+    border: 1px;
+    margin: auto;
+    width: 50%;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: lightblue;
+    font-size: 50px;
+
+}
+
+p {
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    color: red;
+}
+
+#page-container {
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    min-height: 90vh;
+    margin: auto;
+
+}
+
+.equform {
+    text-align: center;
+
+}
+
+input {
+    size: 100px;
+}
+
+#equation {
+    font-size: medium;
+    cursor: pointer;
+}
+
+.submit {
+    background-color: mediumpurple;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.Backbutton {
+    float: left;
+    position: relative;
+    background-color: mediumpurple;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin: 10px 5px;
+    cursor: pointer;
+
+}
+
+.info {
+    position: absolute;
+
+    bottom: 0;
+    width: 100%;
+    /* Height .5of the footer*/
+    height: 28.1%;
+}
+
+.Feedback {
+    border-radius: 20px;
+    background-color: bisque;
+    border: 5px solid;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    color: purple;
+}
+
+.message {
+    width: 80%;
+}
+
+.feedbackTitle {
+    color: black;
+    padding: 1px;
+}
+

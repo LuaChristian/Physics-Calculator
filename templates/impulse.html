@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<div id="page-container">
+
+    <form action="speed" method="POST">
+        <input type="submit" class="Backbutton" name="Backbutton" value="Back to Main">
+
+    </form>
+
+    <body>
+        <div>
+            <h1>
+                Speed
+            </h1>
+            <p1 class="displayEquation">
+                <br></br>
+                $$ Speed = \frac{Distance}{Time} $$
+            </p1>
+            <form action="speed" method="POST">
+                <label for="distance">Distance: </label>
+                <input type="number" name="distance" id="distance">
+                <label for="time">Time: </label>
+                <input type="number" name="time" value="time" id="time">
+                <input type="submit" name="calculate" value="calculate" class="submit" formmethod="POST">
+            </form>
+            <div id="output">
+                <p class="output-statement">Result: {{ result }}</p>
+            </div>
+        </div>
+
+</div>
+</body>
+</div>
+
+<div class="info">
+    <footer class="Feedback">
+        <form>
+            <div class="feedbackTitle">
+                <p1>
+                    Feedback
+                </p1>
+            </div>
+
+            <textarea class="message" name="message" rows="5"></textarea>
+            <br><br>
+            <input type="submit" class="submit">
+        </form>
+
+    </footer>
+</div>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+</head>
+<div id="page-container">
+
+    <body>
+        <div>
+            <h1>
+                Physics Calculator
+            </h1>
+            <p>
+                Welcome to this online physics calculator. In this page, you are able find the
+                answers to any equation in physics
+            </p>
+        </div>
+
+        <form class="equform" action="/home" method="POST">
+            <label for="equation">What kind of problem are you trying to solve:</label>
+            <select id="equation" name="equation">
+                <option value="velocity">Velocity</option>
+                <option value="speed">Speed</option>
+                <option value="distance">Distance</option>
+                <option value="acceleration">Acceleration</option>
+                <option value="motion">Motion</option>
+                <option value="force">Force</option>
+                <option value="weight">Weight</option>
+                <option value="centripetal">Centripetal</option>
+                <option value="momentum">Momentum</option>
+                <option value="impulse">Impulse</option>
+                <option value="work">Work</option>
+                <option value="kinetic">Kinetic Energy</option>
+                <option value="power">Power</option>
+                <option value="torque">Torque</option>
+                <option value="massFlow">Mass Flow Rate</option>
+                <option value="work">Work</option>
+                <option value="kinetic">Kinetic Energy</option>
+            </select>
+            <input type="submit" class="submit">
+        </form>
+    </body>
+    <div class="info">
+        <footer class="Feedback">
+            <form>
+                <div class="feedbackTitle">
+                    <p1>
+                        Feedback
+                    </p1>
+                </div>
+
+                <textarea class="message" name="message" rows="5"></textarea>
+                <br><br>
+                <input type="submit" class="submit">
+            </form>
+
+        </footer>
+    </div>
+</div>
+
+</html>
