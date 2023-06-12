@@ -41,9 +41,9 @@ def acceleration():
             distance = float(request.form['distance'])
             speed = Math.speed(Math, distance, time)
             result = speed
-            return render_template('speed.html', result=result)
+            return render_template('acceleration.html', result=result)
     else:
-        return render_template('speed.html')
+        return render_template('acceleration.html')
 
 
 @app.route("/centripetal", methods=["POST", "GET"])
@@ -58,9 +58,9 @@ def centripetal():
             distance = float(request.form['distance'])
             speed = Math.speed(Math, distance, time)
             result = speed
-            return render_template('speed.html', result=result)
+            return render_template('centripetal.html', result=result)
     else:
-        return render_template('speed.html')
+        return render_template('centripetal.html')
 
 
 @app.route("/distance", methods=["POST", "GET"])
@@ -75,9 +75,9 @@ def distance():
             distance = float(request.form['distance'])
             speed = Math.speed(Math, distance, time)
             result = speed
-            return render_template('speed.html', result=result)
+            return render_template('distance.html', result=result)
     else:
-        return render_template('speed.html')
+        return render_template('distance.html')
 
 
 @app.route("/force", methods=["POST", "GET"])
@@ -92,9 +92,9 @@ def force():
             distance = float(request.form['distance'])
             speed = Math.speed(Math, distance, time)
             result = speed
-            return render_template('speed.html', result=result)
+            return render_template('force.html', result=result)
     else:
-        return render_template('speed.html')
+        return render_template('force.html')
 
 
 @app.route("/impulse", methods=["POST", "GET"])
@@ -109,9 +109,9 @@ def impulse():
             distance = float(request.form['distance'])
             speed = Math.speed(Math, distance, time)
             result = speed
-            return render_template('speed.html', result=result)
+            return render_template('impulse.html', result=result)
     else:
-        return render_template('speed.html')
+        return render_template('impulse.html')
 
 
 @app.route("/kinetic", methods=["POST", "GET"])
@@ -126,9 +126,9 @@ def kinetic():
             distance = float(request.form['distance'])
             speed = Math.speed(Math, distance, time)
             result = speed
-            return render_template('speed.html', result=result)
+            return render_template('kinetic.html', result=result)
     else:
-        return render_template('speed.html')
+        return render_template('kinetic.html')
 
 
 @app.route("/massflow", methods=["POST", "GET"])
@@ -143,9 +143,9 @@ def massflow():
             distance = float(request.form['distance'])
             speed = Math.speed(Math, distance, time)
             result = speed
-            return render_template('speed.html', result=result)
+            return render_template('massflow.html', result=result)
     else:
-        return render_template('speed.html')
+        return render_template('massflow.html')
 
 
 @app.route("/momentum", methods=["POST", "GET"])
@@ -160,9 +160,9 @@ def momentum():
             distance = float(request.form['distance'])
             speed = Math.speed(Math, distance, time)
             result = speed
-            return render_template('speed.html', result=result)
+            return render_template('momentum.html', result=result)
     else:
-        return render_template('speed.html')
+        return render_template('momentum.html')
 
 
 @app.route("/motion", methods=["POST", "GET"])
@@ -177,9 +177,9 @@ def motion():
             distance = float(request.form['distance'])
             speed = Math.speed(Math, distance, time)
             result = speed
-            return render_template('speed.html', result=result)
+            return render_template('motion.html', result=result)
     else:
-        return render_template('speed.html')
+        return render_template('motion.html')
 
 
 @app.route("/power", methods=["POST", "GET"])
@@ -194,9 +194,9 @@ def power():
             distance = float(request.form['distance'])
             speed = Math.speed(Math, distance, time)
             result = speed
-            return render_template('speed.html', result=result)
+            return render_template('power.html', result=result)
     else:
-        return render_template('speed.html')
+        return render_template('power.html')
 
 
 @app.route("/torque", methods=["POST", "GET"])
@@ -211,9 +211,9 @@ def torque():
             distance = float(request.form['distance'])
             speed = Math.speed(Math, distance, time)
             result = speed
-            return render_template('speed.html', result=result)
+            return render_template('torque.html', result=result)
     else:
-        return render_template('speed.html')
+        return render_template('torque.html')
 
 
 @app.route("/velocity", methods=["POST", "GET"])
@@ -228,9 +228,9 @@ def velocity():
             distance = float(request.form['distance'])
             speed = Math.speed(Math, distance, time)
             result = speed
-            return render_template('speed.html', result=result)
+            return render_template('velocity.html', result=result)
     else:
-        return render_template('speed.html')
+        return render_template('velocity.html')
 
 
 @app.route("/weight", methods=["POST", "GET"])
@@ -245,9 +245,9 @@ def weight():
             distance = float(request.form['distance'])
             speed = Math.speed(Math, distance, time)
             result = speed
-            return render_template('speed.html', result=result)
+            return render_template('weight.html', result=result)
     else:
-        return render_template('speed.html')
+        return render_template('weight.html')
 
 
 @app.route("/work", methods=["POST", "GET"])
@@ -262,9 +262,9 @@ def work():
             distance = float(request.form['distance'])
             speed = Math.speed(Math, distance, time)
             result = speed
-            return render_template('speed.html', result=result)
+            return render_template('work.html', result=result)
     else:
-        return render_template('speed.html')
+        return render_template('work.html')
 
 
 if __name__ == '__main__':
