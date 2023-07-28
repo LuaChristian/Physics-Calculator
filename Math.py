@@ -4,7 +4,11 @@ class Math:
         speed = distance / time
         return speed
 
-    def distance(self, speed, time):
+    def time_speed(self, distance, speed):
+        time = distance / speed
+        return time
+
+    def distance_speed(self, speed, time):
         distance = speed * time
         return distance
 

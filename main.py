@@ -14,17 +14,38 @@ def home():
 
 @app.route("/speed", methods=["POST", "GET"])
 def speed():
+    time = ""
+    distance = ""
+    speed = ""
     if request.method == "POST":
         print(request.form)
         if request.form.get('Backbutton'):
             return redirect(url_for('home'))
         elif request.form.get('calculate'):
-            result = ""
-            time = float(request.form['time'])
-            distance = float(request.form['distance'])
-            speed = Math.speed(Math, distance, time)
-            result = speed
-            return render_template('speed.html', result=result)
+            time = request.form['time']
+            distance = request.form['distance']
+            speed = request.form['speed']
+            if time != "" and distance != "":
+                distance = float(distance)
+                time = float(time)
+                speed = Math.speed(Math, distance, time)
+                result = "Speed = " + str(round(speed, 3))
+                return render_template('speed.html', result=result)
+            elif distance != "" and speed != "":
+                distance = float(distance)
+                speed = float(speed)
+                time = Math.time_speed(Math, distance, speed)
+                result = "Time = " + str(round(time, 3))
+                return render_template('speed.html', result=result)
+            elif time != "" and speed != "":
+                speed = float(speed)
+                time = float(time)
+                distance = Math.distance_speed(Math, speed, time)
+                result = "Distance = " + str(round(distance, 3))
+                return render_template('speed.html', result=result)
+            else:
+                result = "Keep one variable empty"
+                return render_template('speed.html', result=result)
     else:
         return render_template('speed.html')
 

@@ -19,19 +19,35 @@
             <h1>
                 Speed
             </h1>
+            <p2 class="warning">
+                Instructions: Out of all the variables in the equation, leave the variable that you are solving for. 
+            </p2>
             <p1 class="displayEquation">
-                <br></br>
-                $$ Speed = \frac{Distance}{Time} $$
+                <br>$$ Speed = \frac{Distance}{Time} $$
             </p1>
+            
+            <br>
             <form action="speed" method="POST">
-                <label for="distance">Distance: </label>
-                <input type="number" name="distance" id="distance">
-                <label for="time">Time: </label>
-                <input type="number" name="time" value="time" id="time">
-                <input type="submit" name="calculate" value="calculate" class="submit" formmethod="POST">
+                <div class="variables">
+                    <section>
+                        <label for="distance">Distance: </label>
+                        <input type="number" name="distance" id="distance">
+                    </section>
+                    <section>
+                        <label for="time">Time: </label>
+                        <input type="number" name="time" value="time" id="time">
+                    </section>
+                    <section>
+                        <label for="speed">Speed: </label>
+                        <input type="number" name="speed" value="speed" id="speed">
+                    </section>
+                </div>
+                <section>
+                    <input type="submit" name="calculate" value="calculate" class="submit" formmethod="POST">
+                </section>
             </form>
             <div id="output">
-                <p class="output-statement">Result: {{ result }}</p>
+                <p class="output-statement">{{ result }}</p>
             </div>
         </div>
 
